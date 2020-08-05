@@ -1,0 +1,15 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">  
+    <solid android:color="#ffffffff"/>      
+    <corners android:radius="20dp" />      
+    <padding android:left="5dp" android:top="5dp" android:right="5dp" android:bottom="5dp" />  
+</shape> 
+
+<!-- solid 底色 stroke 线条 padding 中间离边上多远  gradient 渐变方式 --> 
+
+<!-- <shape xmlns:android="http://schemas.android.com/apk/res/android">  
+    <solid android:color="#b7b7b7"/>      
+    <stroke android:width="3dp" android:color="#ffff8080"/>      
+    <corners android:radius="15dp" />      
+    <padding android:left="5dp" android:top="5dp" android:right="5dp" android:bottom="5dp" />  
+    <gradient android:startColor="#000000" android:endColor="#000000" android:centerColor="#93c1f2" android:angle="0" />  
+</shape>  -->

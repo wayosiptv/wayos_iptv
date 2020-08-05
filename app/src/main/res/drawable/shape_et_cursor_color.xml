@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <size android:width="@dimen/x1"/>
+
+    <solid android:color="@color/menu_layout_true"/>
+
+    <padding
+        android:top="-2dp"
+        android:bottom="-2dp" />
+</shape>

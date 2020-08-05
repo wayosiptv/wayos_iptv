@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:paddingRight="@dimen/x5"
+        android:paddingTop="@dimen/x6"
+        android:layout_width="@dimen/x270"
+        android:layout_height="@dimen/x69"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#339999"
+            android:orientation="vertical"
+            android:gravity="center|right">
+
+            <TextView
+                android:id="@+id/welItemName11"
+                android:layout_width="280dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x27"
+                android:text="电视设置"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x22" />
+
+            <TextView
+                android:id="@+id/welItemEng11"
+                android:layout_width="280dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x27"
+                android:text="TV"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x9" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/welItemImg11"
+            android:layout_width="@dimen/x120"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/x1"
+            android:scaleType="fitStart"
+            android:src="@mipmap/ic_launcher" />
+
+    </RelativeLayout>
+</LinearLayout>

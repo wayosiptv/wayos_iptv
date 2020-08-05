@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/y262"
+    android:layout_height="@dimen/y158"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/remindWelLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/y80"
+                android:layout_height="match_parent"
+                android:background="#50000000"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/dcIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/x90"
+                    android:padding="@dimen/x10"
+                    android:src="@drawable/dc_icon"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x115">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/welHotelIcon1"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/x1" />
+
+
+                        <TextView
+                            android:id="@+id/hotalName1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/x3"
+                            android:gravity="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/x12" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/welTimeText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/y12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dateText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/x10"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/x12" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#80000000"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/helloText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginRight="@dimen/x20"
+                        android:layout_marginTop="@dimen/x20"
+                        android:text="尊敬的贵宾"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/y6"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/helloTextLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginRight="@dimen/x20"
+                        android:layout_marginTop="@dimen/x15"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/welChengHu1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/y9" />
+
+                        <TextView
+                            android:id="@+id/welChengHuName1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/y10"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <ScrollView
+                        android:id="@+id/scrollView1_Znkk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/welSign1"
+                        android:layout_below="@+id/helloTextLayout1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/x5">
+
+                        <TextView
+                            android:id="@+id/welBodyText1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/helloTextLayout1"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:layout_marginRight="@dimen/x20"
+                            android:lineSpacingMultiplier="1.3"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/y6" />
+                    </ScrollView>
+
+                    <TextView
+                        android:id="@+id/welSign1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/selectLiner"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/x5"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:layout_marginRight="@dimen/x10"
+                        android:layout_marginTop="@dimen/x5"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/y7"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:id="@+id/selectLiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x20"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/x10"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:layout_marginRight="@dimen/x10"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/y6"
+                            android:layout_height="@dimen/y6"
+                            android:layout_marginLeft="@dimen/x10"
+                            android:src="@drawable/left_icon" />
+
+                        <Button
+                            android:id="@+id/welBtn1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/y15"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:textSize="@dimen/x5"
+                            android:text="中文"
+                            android:textColor="#FFFFFF" />
+
+
+                        <Button
+                            android:id="@+id/welBtnEng1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/y15"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/x5"
+                            android:gravity="center"
+                            android:text="English"
+                            android:textColor="#FFFFFF" />
+
+                        <ImageView
+                            android:layout_width="@dimen/y6"
+                            android:layout_height="@dimen/y6"
+                            android:layout_marginRight="@dimen/x10"
+                            android:src="@drawable/right_icon" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--底部栏Layout-->
+    <RelativeLayout
+        android:id="@+id/remindWelLayout"
+        android:layout_width="@dimen/y262"
+        android:layout_height="@dimen/y15"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/wel_shape_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/x20"
+            android:gravity="center|right"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="@dimen/y7"
+                android:layout_height="@dimen/y7"
+                android:layout_marginRight="@dimen/x5"
+                android:src="@drawable/wel_select_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x15"
+                android:gravity="center"
+                android:text="选择"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/y6" />
+
+            <ImageView
+                android:layout_width="@dimen/y7"
+                android:layout_height="@dimen/y7"
+                android:layout_marginRight="@dimen/x5"
+                android:src="@drawable/ok_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/y6" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

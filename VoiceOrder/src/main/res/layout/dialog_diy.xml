@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_shape" >
+
+        <TextView
+            android:id="@+id/tv_cancleDialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="@mipmap/icon_dialog_cancle" />
+
+        <ImageView
+            android:id="@+id/loadingImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/icon_dialog_diy1" />
+
+        <TextView
+            android:id="@+id/loadingmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#666666"
+            android:textSize="@dimen/infotext" />
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="#666666"
+            android:textSize="@dimen/infotext" />
+    </RelativeLayout>
+
+</RelativeLayout>

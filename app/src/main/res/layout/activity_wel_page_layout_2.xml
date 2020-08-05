@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/welPageVideo2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <com.youth.banner.Banner
+        android:id="@+id/welPageBgm2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false" />
+
+    <RelativeLayout
+        android:id="@+id/welPageLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--天气 时间 Layout-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/x10"
+            android:gravity="right|center">
+
+            <ImageView
+                android:id="@+id/welTqIcon2"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_gravity="center"
+                android:src="@drawable/tq_icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/welTmpText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/x15" />
+
+            <ImageView
+                android:id="@+id/welTimeIcon2"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/time_icon" />
+
+            <TextView
+                android:id="@+id/welTimeText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/x15" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/welHotelIcon2"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x70"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x10" />
+
+        <TextView
+            android:id="@+id/welHotelName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welHotelIcon2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x6"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:text="维也纳酒店\n武汉体育中心店"
+            android:textSize="@dimen/x18"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/welChooseLayout2"
+            android:layout_centerInParent="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/welTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/y15"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/welChooseLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/y15"
+            android:layout_marginTop="@dimen/y18"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/welBtn2"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/x25"
+                android:background="@drawable/btn_color_selector2"
+                android:focusable="true"
+                android:text="中文"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/welBtnEng2"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/x25"
+                android:layout_marginLeft="@dimen/x15"
+                android:background="@drawable/btn_color_selector2"
+                android:text="English"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/welGridLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x105"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <GridView
+            android:id="@+id/welLevelGridView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x30"
+            android:cacheColorHint="@null"
+            android:choiceMode="singleChoice"
+            android:descendantFocusability="afterDescendants"
+            android:divider="#00000000"
+            android:drawSelectorOnTop="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"></GridView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

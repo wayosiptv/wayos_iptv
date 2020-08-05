@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/wel_grid_item_dc_img_on" android:state_focused="true" />
+    <item android:drawable="@drawable/wel_grid_item_dc_img_on" android:state_checkable="true" />
+    <item android:drawable="@drawable/wel_grid_item_dc_img_on" android:state_pressed="true" />
+    <item android:drawable="@drawable/wel_grid_item_dc_img_on" android:state_selected="true" />
+
+    <item android:drawable="@drawable/wel_grid_item_dc_img_no" android:state_focused="false" />
+    <item android:drawable="@drawable/wel_grid_item_dc_img_no" android:state_checkable="false" />
+    <item android:drawable="@drawable/wel_grid_item_dc_img_no" android:state_pressed="false" />
+    <item android:drawable="@drawable/wel_grid_item_dc_img_no" android:state_selected="false" />
+
+
+</selector>

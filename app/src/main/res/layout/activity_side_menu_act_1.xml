@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#339999"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/x5"
+        android:layout_marginTop="@dimen/x5"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:id="@+id/rl_listView"
+        android:layout_width="180dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_up"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="40dp">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_up"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/up_icon3"/>
+        </RelativeLayout>
+        <ListView
+            android:layout_below="@id/rl_up"
+            android:id="@+id/sideMenuListView"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:cacheColorHint="@null"
+            android:choiceMode="singleChoice"
+            android:divider="#00000000"
+            android:dividerHeight="@dimen/x8"
+            android:layout_marginBottom="40dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars= "none"/>
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/rl_down"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="40dp">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_down"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/down_icon3"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <SurfaceView
+            android:id="@+id/sv_surfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/side_menu_layout_grid_item_select_bg1" />
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/rl_sideMenu"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/sideMenuImg"
+            android:src="@mipmap/wayos_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:background="#aaaaaa"
+            android:visibility="gone"
+            android:id="@+id/sideMenuText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:padding="@dimen/x10"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/x15" />
+
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/wb_webview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/x18"
+        android:layout_marginBottom="@dimen/x18"
+        android:layout_marginLeft="@dimen/x3"
+        android:layout_marginRight="@dimen/x3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/levelItemBg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_grid_item_level_on"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/x4"
+            android:paddingLeft="@dimen/x11"
+            android:paddingRight="@dimen/x11"
+            android:paddingTop="@dimen/x4">
+
+            <ImageView
+                android:id="@+id/menuIcon9"
+                android:layout_width="@dimen/x23"
+                android:layout_height="@dimen/x23"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/menuText9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/x2"
+                android:gravity="center"
+                android:textSize="@dimen/x9" />
+            <!--android:textColor="@drawable/wel_grid_text_select_state"-->
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

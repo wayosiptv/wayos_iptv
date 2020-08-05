@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/welPageVideo4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <com.youth.banner.Banner
+        android:id="@+id/welPageBgm4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:id="@+id/welPageLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/leftLayout"
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:layout_alignParentLeft="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--android:src="@drawable/ht"-->
+
+                <ImageView
+                    android:id="@+id/welHotelIcon4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="81dp" />
+
+                <!--android:text="汉庭连锁酒店"-->
+
+
+                <TextView
+                    android:id="@+id/welHotelName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center"
+                    android:textColor="#fcd9a0"
+                    android:textSize="@dimen/y12" />
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/x65"
+                    android:layout_height="@dimen/x80"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="65dp"
+                    android:layout_marginTop="94dp"
+                    android:background="@drawable/test_rectangle5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/welDataText4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/x10" />
+
+                    <TextView
+                        android:id="@+id/welTimeText4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/x12" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/x10" />
+
+                        <TextView
+                            android:id="@+id/welTmpText4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x8"
+                            android:text=""
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/x10" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/welWeekText4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/x10" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="空气质量"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/x10" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/x10" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rightRetive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/singleLayout4"
+            android:layout_marginRight="160dp"
+            android:layout_marginTop="@dimen/y40"
+            android:layout_toRightOf="@+id/leftLayout"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="81dp"
+                    android:text="Welcome"
+                    android:textColor="#fcd9a0"
+                    android:textSize="70sp"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/welChengHu4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fcd9a0"
+                        android:textSize="@dimen/y8"
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:id="@+id/welChengHuName4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fcd9a0"
+                        android:textSize="@dimen/y8"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <!--android:text="欢迎入住汉庭快捷酒店"-->
+
+                <TextView
+                    android:id="@+id/welTitle4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:singleLine="true"
+                    android:textColor="#fcd9a0"
+                    android:textSize="@dimen/y8" />
+
+
+                <TextView
+                    android:id="@+id/welBodyText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x5"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textColor="#fcd9a0"
+                    android:textSize="@dimen/y8" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/singleLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="109dp"
+            android:layout_marginRight="160dp"
+            android:gravity="center|right">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/welZhiWei4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/y9" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/welSign4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x25"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/y11" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/welBtn4"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x20"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="65dp"
+            android:background="@drawable/btn_color_selector2"
+            android:text="确认进入"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/welGridLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x105"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <GridView
+            android:id="@+id/welLevelGridView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x30"
+            android:cacheColorHint="@null"
+            android:choiceMode="singleChoice"
+            android:descendantFocusability="afterDescendants"
+            android:divider="#00000000"
+            android:drawSelectorOnTop="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"></GridView>
+
+    </RelativeLayout>
+</RelativeLayout>

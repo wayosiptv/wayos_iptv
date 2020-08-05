@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tvItemLiner"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:focusable="true"
+        android:gravity="center|left">
+
+
+        <TextView
+            android:id="@+id/item_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:focusable="true"
+            android:gravity="center|left"
+            android:text="6666"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp" />
+    </LinearLayout>
+</LinearLayout>

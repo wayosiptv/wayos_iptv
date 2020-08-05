@@ -1,0 +1,506 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    //newsPolling
+
+    <RelativeLayout
+        android:id="@+id/newsPollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/newsPollPic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/jjtg_bg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="紧急通告"
+                android:textColor="@color/actionsheet_red"
+                android:textSize="@dimen/x20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/newsPollText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="@dimen/x8"
+                android:textColor="@color/actionsheet_red"
+                android:textSize="@dimen/x15" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <SurfaceView
+        android:id="@+id/sv_surfaceview_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/adLiveImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+    //广告倒计时
+
+    <FrameLayout
+        android:id="@+id/adFrameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/y10"
+        android:layout_marginTop="@dimen/y7"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广告倒计时："
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/y7" />
+
+            <TextView
+                android:id="@+id/adTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/y7" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    //电视列表
+
+    <FrameLayout
+        android:id="@+id/fl_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@drawable/tv_list_shape_layout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/tvItemLiner"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/tv_list_title_shape_layout"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/item_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="频道列表"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/upIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:src="@drawable/up_icon1" />
+
+                <ListView
+                    android:id="@+id/tv_menu_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/downIcon"
+                    android:layout_below="@+id/upIcon"
+                    android:layout_gravity="center|left"
+                    android:cacheColorHint="@null"
+                    android:choiceMode="singleChoice"
+                    android:divider="#00000000"
+                    android:dividerHeight="10dp"
+                    android:listSelector="@drawable/focus_es8"
+                    android:scrollbars="none" />
+
+                <ImageView
+                    android:id="@+id/downIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/down_icon1" />
+            </RelativeLayout>
+            <!--android:choiceMode="singleChoice"-->
+            <!--android:listSelector="#2196F3"-->
+            <!--android:cacheColorHint="@null"-->
+            <Button
+                android:id="@+id/btn_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginLeft="5dp"
+                android:text="点击"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/pb_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_video_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_back"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_play_video"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/icon_topause"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_full_video"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/icon_tofullscreen"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+    //遥控器没有操作，显示文字
+
+    <FrameLayout
+        android:id="@+id/returnTextFrameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/y10"
+        android:layout_marginTop="@dimen/y7"
+        android:background="@color/start_page2_layout_bg"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/x3"
+                android:text="温馨提示"
+                android:textColor="@color/actionsheet_red"
+                android:textSize="@dimen/x20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/returnTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/x8"
+                android:text="您已经持续观看一小时了，请保护视力，注意休息"
+                android:textColor="@color/actionsheet_red"
+                android:textSize="@dimen/x19"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    //消息滚动
+
+    <FrameLayout
+        android:id="@+id/voideRollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y16"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/y85"
+        android:layout_marginRight="@dimen/y85"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@drawable/main_roll_layout_shape"
+        android:visibility="gone">
+
+        <zxch.com.androdivoidetest.utils.RollTextView
+            android:id="@+id/rollText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/roll_voide_icon"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="@dimen/y3"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/y8" />
+
+
+    </FrameLayout>
+
+    //电视信息栏
+
+    <FrameLayout
+        android:id="@+id/tv_details"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="920dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:background="@drawable/dibutiao2"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/liner1"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.22"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvListNums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/nowTvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liner2"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.67"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/tvHotelIcon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/hotelName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="26sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liner3"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.10"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNextText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上一频道"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tvNextName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    //遥控器键值显示
+
+    <FrameLayout
+        android:id="@+id/keyValueLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/x5"
+        android:background="@color/start_page2_text_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/keyValueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x5"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x20"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+
+    //左上图标
+
+    <FrameLayout
+        android:id="@+id/leftTopLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/y5"
+        android:background="@color/start_page2_text_bg"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/leftTopIcon"
+            android:layout_width="@dimen/y150"
+            android:layout_height="@dimen/y150"
+            android:padding="@dimen/x10"
+            android:scaleType="fitXY"
+            android:src="@drawable/start_bg" />
+
+    </FrameLayout>
+
+    //左下图标
+
+    <FrameLayout
+        android:id="@+id/leftBottomLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/y5"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/leftBottomIcon"
+            android:layout_width="@dimen/y65"
+            android:layout_height="@dimen/y65"
+            android:scaleType="fitXY"
+            android:src="@drawable/start_bg" />
+
+    </FrameLayout>
+
+    //右上图标
+
+    <FrameLayout
+        android:id="@+id/rightTopLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/y5">
+
+        <ImageView
+            android:id="@+id/rightTopIcon"
+            android:layout_width="@dimen/y65"
+            android:layout_height="@dimen/y65"
+            android:scaleType="fitXY"
+            android:src="@drawable/start_bg"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    //右下图标
+
+    <FrameLayout
+        android:id="@+id/rightBottomLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/y5"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/rightBottomIcon"
+            android:layout_width="@dimen/y65"
+            android:layout_height="@dimen/y65"
+            android:scaleType="fitXY"
+            android:src="@drawable/start_bg" />
+
+    </FrameLayout>
+
+</RelativeLayout>

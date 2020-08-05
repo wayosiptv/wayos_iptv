@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/dialog_layout_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务器地址："
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x10" />
+
+
+            <EditText
+                android:id="@+id/dialog_confirm_edit"
+                android:layout_width="@dimen/x140"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@drawable/layout_shape"
+                android:digits="1234567890."
+                android:inputType="phone"
+                android:text="192.168.50.253"
+                android:paddingBottom="@dimen/x5"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x5"
+                android:textColor="@color/color_black"
+                android:textCursorDrawable="@drawable/shape_et_cursor_color"
+                android:textSize="@dimen/x10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:text="房间号："
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x10" />
+
+            <EditText
+                android:id="@+id/dialog_room_num_edit"
+                android:layout_width="@dimen/x140"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@drawable/layout_shape"
+                android:digits="1234567890"
+                android:inputType="phone"
+                android:paddingBottom="@dimen/x5"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x5"
+                android:textColor="@color/color_black"
+                android:textCursorDrawable="@drawable/shape_et_cursor_color"
+                android:textSize="@dimen/x10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:text="酒店代码："
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x10" />
+
+            <EditText
+                android:id="@+id/dialog_hotel_code_edit"
+                android:layout_width="@dimen/x140"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@drawable/layout_shape"
+                android:paddingBottom="@dimen/x5"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:singleLine="true"
+                android:paddingTop="@dimen/x5"
+                android:textColor="@color/color_black"
+                android:textCursorDrawable="@drawable/shape_et_cursor_color"
+                android:textSize="@dimen/x10" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dialog_confirm_sure"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x25"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@drawable/layout_dialog_btn_shape_0"
+            android:text="OK"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/dialogVersionCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/dialogVersionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+</RelativeLayout>

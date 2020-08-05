@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hotel_num"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/y20"
+            android:gravity="center"
+            android:text="温馨提示"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/y30"
+            android:gravity="center"
+            android:text="当前房间号为"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y12" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/y8"
+            android:background="@color/screen_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/x12"
+            android:paddingLeft="@dimen/x18"
+            android:paddingRight="@dimen/x18"
+            android:paddingTop="@dimen/x12">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x18"
+                android:src="@drawable/screen_house_icon" />
+
+            <TextView
+                android:id="@+id/screenRoomId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x2"
+                android:text="506"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x25" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/noteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/x64"
+            android:layout_marginRight="@dimen/x64"
+            android:layout_marginTop="@dimen/x30"
+            android:text="1、首先确保您的手机连接在酒店无线网络中，然后打开视频应用。\n       例如腾讯视频、爱奇艺、优酷或者QQ音乐、酷狗等，点投屏图标。
+\n\n2、搜索你当前房间号为投屏设备，进入投屏，为保证您的隐私。\n      此时电视机上面会做出相应的提示功能，如果需要投屏请点击接受并确定。\n      如拒绝投屏，请点击拒绝。"
+            android:textColor="@color/white"
+            android:textSize="@dimen/y7" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/roomNumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/x275"
+        android:layout_marginTop="@dimen/x113"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x25" />
+
+</RelativeLayout>

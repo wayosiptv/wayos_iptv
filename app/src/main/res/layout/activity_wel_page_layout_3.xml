@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/welPageVideo3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <com.youth.banner.Banner
+        android:id="@+id/welPageBgm3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/welPageLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="33dp"
+            android:gravity="center|left">
+
+            <ImageView
+                android:id="@+id/welTqIcon3"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:src="@drawable/tq_icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/welTmpText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/x15" />
+
+            <ImageView
+                android:id="@+id/welTimeIcon3"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/time_icon" />
+
+            <TextView
+                android:id="@+id/welTimeText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/x15" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/y159"
+            android:layout_height="@dimen/x173"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/x98"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/y5"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:paddingTop="@dimen/x8"
+            android:layout_marginRight="@dimen/x98">
+
+            <!--android:background="@drawable/strat_page1_layout"-->
+
+            <LinearLayout
+                android:id="@+id/linearLayout3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/helloTextLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!--android:text="尊敬的："-->
+                    <TextView
+                        android:id="@+id/welChengHu3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#CA825C"
+                        android:textSize="@dimen/y11"
+                        android:textStyle="bold" />
+                    <!--android:textColor="@color/ijk_transparent_dark"-->
+                    <TextView
+                        android:id="@+id/welChengHuName3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="欧先生"
+                        android:textColor="#CA825C"
+                        android:textSize="@dimen/y11"
+                        android:visibility="gone" />
+                    <!--android:textColor="@color/ijk_transparent_dark"-->
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/welTitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x8"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textColor="#CA825C"
+                    android:textSize="@dimen/y10"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:padding="@dimen/x3">
+
+                <Button
+                    android:id="@+id/welBtn3"
+                    android:layout_width="@dimen/y35"
+                    android:layout_height="@dimen/y16"
+                    android:background="@drawable/btn_color_selector1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:text="中文"
+                    android:textColor="@color/ijk_transparent_dark"
+                    android:textSize="@dimen/y7" />
+
+
+                <Button
+                    android:id="@+id/welBtnEng3"
+                    android:layout_width="@dimen/y35"
+                    android:layout_height="@dimen/y16"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/y15"
+                    android:background="@drawable/btn_color_selector1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:text="English"
+                    android:textColor="@color/ijk_transparent_dark"
+                    android:textSize="@dimen/y7" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/welGridLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x105"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <GridView
+            android:id="@+id/welLevelGridView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x30"
+            android:cacheColorHint="@null"
+            android:choiceMode="singleChoice"
+            android:descendantFocusability="afterDescendants"
+            android:divider="#00000000"
+            android:drawSelectorOnTop="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"></GridView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

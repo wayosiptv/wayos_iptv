@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+
+    <!--android:layout_width="@dimen/y297"-->
+
+    <LinearLayout
+        android:layout_width="@dimen/y320"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/remindMenuLayout"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/welGridView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#50010101"
+            android:cacheColorHint="@null"
+            android:choiceMode="singleChoice"
+            android:descendantFocusability="afterDescendants"
+            android:divider="#00000000"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"></GridView>
+
+
+    </LinearLayout>
+    <!--android:layout_width="@dimen/y297"-->
+
+    <RelativeLayout
+        android:id="@+id/remindMenuLayout"
+        android:layout_width="@dimen/y320"
+        android:layout_height="@dimen/y14"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/wel_shape_bottom"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y14"
+            android:layout_marginRight="@dimen/x9"
+            android:gravity="center|right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/y5"
+                android:layout_height="@dimen/y5"
+                android:layout_marginRight="@dimen/x5"
+                android:src="@drawable/wel_select_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x15"
+                android:gravity="center"
+                android:text="选择"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/y5" />
+
+            <ImageView
+                android:layout_width="@dimen/y5"
+                android:layout_height="@dimen/y5"
+                android:layout_marginRight="@dimen/x5"
+                android:src="@drawable/ok_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x15"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/y5" />
+
+            <ImageView
+                android:layout_width="@dimen/y5"
+                android:layout_height="@dimen/y5"
+                android:layout_marginRight="@dimen/x5"
+                android:src="@drawable/back_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/y5" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

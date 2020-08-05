@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="menu_list_item_true">#FCEE7C</color>
+    <color name="menu_layout_true">#000000</color>
+    <color name="menu_layout_false">#30FCEE7C</color>
+
+    <color name="color_black">#000000</color>
+    <color name="text_black">#333333</color>
+    <color name="text_blue">#0076FF</color>
+    <color name="color_frame2">#20494949</color>
+    <color name="color_frame40">#40494949</color>
+    <color name="color_frame60">#60494949</color>
+
+    <color name="ijk_color_blue_700">#1976D2</color>
+
+    <color name="color_btn_select_1">#66cefd</color>
+    <color name="color_btn_select_0">#E0E0E0</color>
+
+    <color name="toast_style">#90525865</color>
+
+    <color name="wel_btn_select_true">#FCEE7C</color>
+    <color name="wel_btn_select_false">#30FCEE7C</color>
+
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="start_page2_layout_bg">#303D464F</color>
+    <color name="start_page2_text_bg">#903e4750</color>
+    <color name="ijk_transparent_dark1">#50000000</color>
+    <color name="ijk_transparent_dark">#77000000</color>
+    <color name="color_bg03_top">#606b4e2f</color>
+
+    <color name="transparent1">#00000000</color>
+    <color name="color_surface_layout_black">#95000000</color>
+    <color name="orangeyellow">#ADAF2F</color>
+    <color name="transparent2">#00FFFFFF</color>
+    <color name="ijk_color_blue_100">#BBDEFB</color>
+    <color name="screen_white">#10FFFFFF</color>
+
+</resources>

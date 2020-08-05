@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/orangeyellow" android:state_focused="true" />
+    <item android:color="@color/orangeyellow" android:state_checkable="true" />
+    <item android:color="@color/orangeyellow" android:state_selected="true" />
+    <item android:color="@color/orangeyellow" android:state_pressed="true" />
+
+    <item android:color="#FFFFFF" android:state_focused="false" />
+    <item android:color="#FFFFFF" android:state_checkable="false" />
+    <item android:color="#FFFFFF" android:state_selected="false" />
+    <item android:color="#FFFFFF" android:state_pressed="false" />
+</selector>

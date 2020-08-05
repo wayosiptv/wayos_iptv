@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutTitle0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/voiceImgLayout"
+        android:orientation="vertical">
+
+        <!--android:text="你可以这样问我："-->
+        <TextView
+            android:id="@+id/titleText0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x5"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/x13"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="#EDEDED" />
+
+        <LinearLayout
+            android:id="@+id/layoutTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--android:src="@drawable/tv_icon"-->
+            <ImageView
+                android:id="@+id/titleImg1"
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25"
+                android:padding="@dimen/x3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x5"
+                android:orientation="vertical">
+
+                <!--android:text="电视节目"-->
+                <TextView
+                    android:id="@+id/titleText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/x9"
+                    android:textStyle="bold" />
+
+                <!--android:text="“中央一台”  “浙江卫视”"-->
+                <TextView
+                    android:id="@+id/titleMsg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x3"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/x7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1"
+                    android:layout_marginTop="@dimen/x2"
+                    android:background="#EDEDED" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x5"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!--android:src="@drawable/music_icon"-->
+            <ImageView
+                android:id="@+id/titleImg2"
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25"
+                android:padding="@dimen/x3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x5"
+                android:orientation="vertical">
+
+                <!--android:text="播放音乐"-->
+                <TextView
+                    android:id="@+id/titleText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/x9"
+                    android:textStyle="bold" />
+
+                <!--android:text="“播放刘德华的忘情水”"-->
+                <TextView
+                    android:id="@+id/titleMsg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x3"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/x7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1"
+                    android:layout_marginTop="@dimen/x2"
+                    android:background="#EDEDED" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutTitle3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--android:src="@drawable/smart_iocn"-->
+            <ImageView
+                android:id="@+id/titleImg3"
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25"
+                android:padding="@dimen/x3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x5"
+                android:orientation="vertical">
+
+                <!--android:text="智能家居"-->
+                <TextView
+                    android:id="@+id/titleText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/x9"
+                    android:textStyle="bold" />
+
+                <!--android:text="“关闭所有灯”“打开窗帘”"-->
+                <TextView
+                    android:id="@+id/titleMsg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x3"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/x7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1"
+                    android:layout_marginTop="@dimen/x2"
+                    android:background="#EDEDED" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/voiceScroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <zxch.com.androdivoidetest.utils.HandlerDataListView
+                        android:id="@+id/voiceListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overScrollFooter="@android:color/transparent"
+                        android:overScrollHeader="@android:color/transparent"
+                        android:overScrollMode="never"
+                        android:scrollbars="none"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/text_shape_corner_1"
+                android:gravity="center"
+                android:maxLength="10"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/text_shape_corner_0"
+                android:text="抱歉，没有找到相关的信息"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/voiceImgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/luYinImg"
+            android:layout_width="@dimen/x45"
+            android:layout_height="@dimen/x45"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/x2"
+            android:scaleType="fitXY"
+            android:src="@drawable/luyin_on"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/stateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/x2"
+            android:text="---正在聆听---"
+            android:textColor="@color/ijk_color_blue_700"
+            android:textSize="@dimen/x8"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>

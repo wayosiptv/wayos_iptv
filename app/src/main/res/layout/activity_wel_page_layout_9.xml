@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/welPageVideo9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:visibility="visible" />
+
+    <com.youth.banner.Banner
+        android:id="@+id/welPageBgm9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false" />
+
+    <LinearLayout
+        android:id="@+id/welLiner9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/welGridLayout"
+        android:layout_alignParentTop="true"
+        android:focusable="false"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/x50"
+        android:visibility="visible"
+        android:weightSum="20">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            tools:ignore="Suspicious0dp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="11.5"
+            android:background="@color/color_surface_layout_black">
+
+            <SurfaceView
+                android:id="@+id/welPageAdvertVideo9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/x3"
+                android:focusable="false" />
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/welPageAdvertPic9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            tools:ignore="Suspicious0dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:background="#629df9"
+            android:gravity="center"
+            android:focusable="false"
+            android:orientation="vertical"
+            tools:ignore="Suspicious0dp">
+
+            <TextView
+                android:id="@+id/welDataText9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-12-12  星期三"
+                android:textSize="@dimen/x10" />
+
+            <TextView
+                android:id="@+id/welTimeText9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x15"
+                android:text="12:12"
+                android:textSize="@dimen/x15" />
+
+            <ImageView
+                android:id="@+id/welHotelIcon9"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/x50"
+                android:layout_marginTop="@dimen/x15" />
+
+            <TextView
+                android:id="@+id/welHotelName9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x15"
+                android:padding="1dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/x10" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            tools:ignore="Suspicious0dp" />
+    </LinearLayout>
+
+    <!--<GridView-->
+    <!--android:id="@+id/welGridView9"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:descendantFocusability="afterDescendants"-->
+    <!--android:focusable="true"-->
+    <!--android:focusableInTouchMode="true"-->
+    <!--android:listSelector="@color/item_select_color"-->
+    <!--android:paddingLeft="@dimen/x50"-->
+    <!--android:paddingRight="@dimen/x50"-->
+    <!--android:visibility="visible" />-->
+
+    <RelativeLayout
+        android:id="@+id/welGridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x85"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <GridView
+            android:id="@+id/welGridView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:descendantFocusability="afterDescendants"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+    <!--<GridView-->
+    <!--android:id="@+id/welGridView9"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:descendantFocusability="afterDescendants"-->
+    <!--android:numColumns="7"-->
+    <!--tools:listitem="@layout/wel_page_grid_item_anim"-->
+    <!--android:focusable="true"-->
+    <!--android:focusableInTouchMode="true"></GridView>-->
+
+</RelativeLayout>

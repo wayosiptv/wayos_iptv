@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/welFragLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <SurfaceView
+            android:id="@+id/welPageVideo10_0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <com.youth.banner.Banner
+            android:id="@+id/welPageBgm10_0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/welFragLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <SurfaceView
+            android:id="@+id/welPageVideo10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:visibility="visible" />
+
+        <com.youth.banner.Banner
+            android:id="@+id/welPageBgm10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false" />
+
+        <RelativeLayout
+            android:id="@+id/toplayout10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x10">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/welHotelIcon10"
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/x50"
+                    android:layout_marginLeft="@dimen/x8"
+                    android:padding="@dimen/x5" />
+
+                <TextView
+                    android:id="@+id/hotelName10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:gravity="center|left"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/x16" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/welTimeText10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:text="2019-05-21 星期二 15:29"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/x13" />
+
+
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/welGridView10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toplayout10"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:cacheColorHint="@null"
+            android:descendantFocusability="afterDescendants"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/x5"
+            android:listSelector="#00000000"
+            android:padding="@dimen/x5"
+            android:scrollbars="none" />
+
+    </RelativeLayout>
+
+</LinearLayout>

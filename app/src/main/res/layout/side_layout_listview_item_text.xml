@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/sideMenuItemText"
+        android:layout_width="@dimen/x75"
+        android:layout_height="@dimen/x40"
+        android:layout_gravity="center"
+        android:background="@drawable/side_menu_layout_grid_item_select_bg"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:paddingTop="@dimen/x5"
+        android:paddingBottom="@dimen/x5"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/x9" />
+
+</LinearLayout>
